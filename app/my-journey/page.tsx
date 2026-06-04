@@ -74,14 +74,14 @@ const Profile = async () => {
           </AccordionTrigger>
           <AccordionContent>
             <CompanionsList
-              companions={bookmarkedCompanions}F
+              companions={bookmarkedCompanions}
               title="Bookmarked Companions"
             />
           </AccordionContent>
         </AccordionItem> */}
 
 
-        
+
         <AccordionItem value="recent">
           <AccordionTrigger className="text-2xl font-bold">
             Recent Sessions
