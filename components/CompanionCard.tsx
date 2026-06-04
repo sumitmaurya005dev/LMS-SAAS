@@ -1,8 +1,7 @@
 import React from 'react'
 import { Button } from './ui/button';
 import Image from 'next/image';
-import { Link } from 'lucide-react';
-
+import Link from "next/link";
 interface CompanionCardProps{
     id:string;
     name:string,
@@ -29,7 +28,11 @@ const CompanionCard = ({id,name,color,topic,subject,duration}:CompanionCardProps
                 <p className='text-sm'>{duration} mins duration</p>
         </div>
 
-                <Button className="btn-primary w-full justify-center">Launch Session</Button>         
+               <Link href={`/companion/${id}`} className="w-full">
+        <button className="btn-primary w-full justify-center">
+          Launch Lesson
+        </button>
+      </Link>       
     </article>
   )
 }
