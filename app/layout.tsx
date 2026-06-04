@@ -25,12 +25,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={cn("font-sans", geist.variable)}>
-      <body className={`${bricolage.variable} antialiased`}>
+            <body className={`${bricolage.variable} antialiased`}>
         <ClerkProvider appearance={{variables:{colorPrimary: '#fe5933'}}}>
-            <Navbar/>
-          {children}
+              <Navbar/>
+              {children}
         </ClerkProvider>
-        </body>
+            </body>
     </html>
   );
 }
